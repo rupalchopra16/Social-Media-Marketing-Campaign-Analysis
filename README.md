@@ -1,6 +1,6 @@
 # Marketing Campaign Performance Analysis
 
-Analysis of 300,000 social media ad campaign records to identify which channel underperforms — and why — using Python, pandas, and matplotlib.
+Analysis of 300,000 social media ad campaign records to identify which channel underperforms and why — using Python, pandas, and matplotlib.
 
 ## Objective
 
@@ -24,15 +24,7 @@ CTR's distribution showed most campaigns clustered at 30–33%, with a smaller t
 - **The cause is channel-specific, not audience or goal-related.** Campaign_Goal, Customer_Segment, Target_Audience, Location, and Language showed no meaningful concentration in the low-CTR group — only Channel_Used did.
 - **Acquisition_Cost and Conversion_Rate stay flat across channels**, ruling out cost or conversion efficiency as the explanation — the issue is specific to click-through behavior on Pinterest.
 
-**Takeaway:** most Pinterest campaigns perform normally, but the channel carries a meaningfully higher risk of severe underperformance than the other three — worth a targeted creative/targeting review.
-
-## Visualizations
-
-- Average CTR by channel (bar chart)
-- Overall campaign share vs. share of low-CTR campaigns, by channel (grouped bar chart) — the core evidence for the Pinterest finding
-- Distribution of CTR across all campaigns (histogram) — visual confirmation of the skewed, trustworthy shape referenced in the data quality section
-
-*(See `Marketing_Campaign_Analysis.ipynb` for all charts and full code.)*
+**Takeaway:** most Pinterest campaigns perform normally, but the channel carries a higher risk of severe underperformance than the other three - suggesting a much needed creative/targeting review.
 
 ## Tools & Libraries
 
@@ -44,4 +36,4 @@ CTR's distribution showed most campaigns clustered at 30–33%, with a smaller t
 
 1. Download the dataset from the Kaggle link above and place the CSV in the same folder as the notebook.
 2. Install dependencies: `pip install pandas matplotlib`
-3. Open `Marketing_Campaign_Analysis.ipynb` in Jupyter and run all cells.
+3. Open `Marketing Campaign Analysis.ipynb` in Jupyter and run all cells.
