@@ -14,7 +14,7 @@ This dataset contains social media ad campaign data across Facebook, Instagram, 
 
 ## Data Quality Validation
 
-ROI and Engagement_Score both showed evenly-spaced quartiles and hard value caps — a signature of randomly-generated data rather than real business metrics — so both were **excluded**. CTR showed a naturally skewed distribution and was used as the primary metric throughout.
+ROI, Conversion_Rate, and Engagement_Score all showed evenly-spaced quartiles and hard value caps — a signature of randomly-generated data rather than real business metrics — so all were **excluded**. CTR showed a naturally skewed distribution and was used as the primary metric throughout.
 
 ## Key Findings
 
@@ -22,7 +22,7 @@ CTR's distribution showed most campaigns clustered at 30–33%, with a smaller t
 
 - **Pinterest disproportionately drives severe underperformance.** Its overall average CTR (29.2%) is only slightly below other channels (~32%), but it accounts for **38% of all campaigns with CTR below 20%**, despite representing only **25% of total campaigns**.
 - **The cause is channel-specific, not audience or goal-related.** Campaign_Goal, Customer_Segment, Target_Audience, Location, and Language showed no meaningful concentration in the low-CTR group — only Channel_Used did.
-- **Acquisition_Cost and Conversion_Rate stay flat across channels**, ruling out cost or conversion efficiency as the explanation — the issue is specific to click-through behavior on Pinterest.
+- **Acquisition_Cost and Conversion_Rate stay flat across channels**, ruling out cost or conversion efficiency as the explanation — Conversion_Rate was also checked but excluded from the analysis after failing the same data-quality test applied to ROI and Engagement_Score.
 
 **Takeaway:** most Pinterest campaigns perform normally, but the channel carries a higher risk of severe underperformance than the other three - suggesting a much needed creative/targeting review.
 
